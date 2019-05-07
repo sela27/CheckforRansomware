@@ -1,6 +1,7 @@
 import enchant
 import glob
 
+#check if a file or some part of it is encrypted, because we work only on english ascii we check if the word is in english or close the an english word (with dic.suggest)
 def checkEnc(text_file):
 	dic = enchant.Dict("en_US")
 	lineNum = 1
